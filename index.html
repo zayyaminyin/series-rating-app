@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Rate Series Here!</title>
+	<script src="ajax.js"></script>
+  <script src="html_helpers.js"></script>
+	<script src="ratings.js"></script>
+</head>
+<style>
+  h2 {color:red;}
+  h1 {color:red;background:#232323;text-align:center;}
+</style>
+<body onload="getSeries();setInterval(getSeries, 5000);">
+
+  <h1> WELCOME TO SERIES RATER </h1>
+
+	<h2>ADD SERIES</h2>
+	<p>Netflix ID (8 digits)<br/><input type="text" id="series_id_input"/><br/><br/>
+Title<br/><input type="text" id="series_title_input"/><br/><br/>
+Original Network<br/><input type="text" id="series_network_input"/></p>
+<button onClick="newSeries();">Submit</button>
+<hr/>
+
+<div id="series"></div>
+
+</body>
+</html>
